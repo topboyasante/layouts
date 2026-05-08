@@ -1,0 +1,47 @@
+import {
+  GlobeIcon,
+  ChartBarIcon,
+  CommandIcon,
+  TargetIcon,
+  SmileyIcon,
+  GearIcon,
+} from '@phosphor-icons/react'
+
+export function IconSidebar() {
+  return (
+    <div className="w-12 shrink-0 bg-white dark:bg-[#0a0a0a] border-r border-black/8 dark:border-white/8 flex flex-col items-center py-3 gap-1">
+      {/* Logo */}
+      <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center mb-2">
+        <span className="text-[13px] font-bold text-white">C</span>
+      </div>
+
+      {/* Nav icons */}
+      <button className="w-8 h-8 rounded-lg flex items-center justify-center text-black/35 dark:text-white/35 hover:bg-black/5 hover:text-black dark:hover:text-white transition-colors">
+        <GlobeIcon size={16} />
+      </button>
+
+      <button className="w-8 h-8 rounded-xl flex items-center justify-center bg-[#f03e6e] text-white transition-colors">
+        <ChartBarIcon size={16} weight="fill" />
+      </button>
+
+      <button className="w-8 h-8 rounded-lg flex items-center justify-center text-black/35 dark:text-white/35 hover:bg-black/5 hover:text-black dark:hover:text-white transition-colors">
+        <CommandIcon size={16} />
+      </button>
+
+      <button className="w-8 h-8 rounded-lg flex items-center justify-center text-black/35 dark:text-white/35 hover:bg-black/5 hover:text-black dark:hover:text-white transition-colors">
+        <TargetIcon size={16} />
+      </button>
+
+      {/* Bottom */}
+      <div className="mt-auto flex flex-col items-center gap-1">
+        <button className="w-8 h-8 rounded-lg flex items-center justify-center text-black/35 dark:text-white/35 hover:bg-black/5 hover:text-black dark:hover:text-white transition-colors relative">
+          <SmileyIcon size={16} />
+          <span className="absolute top-0.5 right-0.5 w-2 h-2 rounded-full bg-red-500" />
+        </button>
+        <button className="w-8 h-8 rounded-lg flex items-center justify-center text-black/35 dark:text-white/35 hover:bg-black/5 hover:text-black dark:hover:text-white transition-colors">
+          <GearIcon size={16} />
+        </button>
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Figtree Variable', sans-serif;
+}
+
+/* Shiki dual-theme: transparent bg, swap text color in dark mode */
+.shiki, .shiki span {
+  color: var(--shiki-light);
+  background-color: transparent !important;
+}
+.dark .shiki, .dark .shiki span {
+  color: var(--shiki-dark) !important;
+}
+
+
+

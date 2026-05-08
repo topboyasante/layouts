@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg    { fill: #e8e8e8; }
+    .side  { fill: #d0d0d0; }
+    .pill1 { fill: #a0a0a0; }
+    .pill2 { fill: #b8b8b8; }
+    .pill3 { fill: #c4c4c4; }
+    .block { fill: #d8d8d8; }
+    .blockl{ fill: #dedede; }
+
+    @media (prefers-color-scheme: dark) {
+      .bg    { fill: #1c1c1e; }
+      .side  { fill: #2c2c2e; }
+      .pill1 { fill: #8e8e93; }
+      .pill2 { fill: #636366; }
+      .pill3 { fill: #48484a; }
+      .block { fill: #2c2c2e; }
+      .blockl{ fill: #252527; }
+    }
+  </style>
+
+  <rect width="32" height="32" rx="6" class="bg"/>
+  <rect x="3" y="3" width="8" height="26" rx="2" class="side"/>
+  <rect x="4.5" y="6" width="5" height="2" rx="1" class="pill1"/>
+  <rect x="4.5" y="10" width="3.5" height="2" rx="1" class="pill2"/>
+  <rect x="4.5" y="13.5" width="5" height="2" rx="1" class="pill2"/>
+  <rect x="4.5" y="17" width="3.5" height="2" rx="1" class="pill3"/>
+  <rect x="13" y="3" width="16" height="6" rx="2" class="block"/>
+  <rect x="13" y="11.5" width="7" height="7" rx="2" class="block"/>
+  <rect x="22" y="11.5" width="7" height="7" rx="2" class="block"/>
+  <rect x="13" y="21" width="16" height="8" rx="2" class="blockl"/>
+</svg>
