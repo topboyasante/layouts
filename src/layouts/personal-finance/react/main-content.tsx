@@ -403,7 +403,7 @@ export function MainContent() {
           </div>
 
           <div className="grid grid-cols-2 gap-x-6 mt-1">
-          {goals.map((goal, i) => (
+          {goals.map((goal) => (
             <div key={goal.label}>
               {goal.section && (
                 <p className="text-[11px] text-black/40 dark:text-white/40 mt-2 mb-1">{goal.section}</p>
