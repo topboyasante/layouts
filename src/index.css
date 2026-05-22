@@ -2,7 +2,18 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: 'Figtree Variable', sans-serif;
+  --font-sans: 'Inter Variable', sans-serif;
+}
+
+/* body 400, headings 700 */
+body {
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
 }
 
 /* Shiki dual-theme: transparent bg, swap text color in dark mode */

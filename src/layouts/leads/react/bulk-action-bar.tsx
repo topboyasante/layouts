@@ -1,0 +1,39 @@
+import {
+  PencilSimpleIcon,
+  ArrowBendUpRightIcon,
+  TrashIcon,
+} from '@phosphor-icons/react'
+
+export function BulkActionBar() {
+  return (
+    <div className="absolute left-1/2 -translate-x-1/2 bottom-8 z-30 flex items-center gap-1 h-11 pl-4 pr-1.5 rounded-full bg-[#171717] text-white shadow-[0_12px_36px_-10px_rgba(0,0,0,0.5)]">
+      <span className="text-[12.5px] text-white/70">
+        Selected: <span className="text-white font-medium">3</span>
+      </span>
+      <span className="w-px h-5 bg-white/15 mx-2" />
+      <PillBtn>
+        <PencilSimpleIcon size={14} />
+        Edit
+      </PillBtn>
+      <PillBtn>
+        <ArrowBendUpRightIcon size={14} />
+        Assign to
+      </PillBtn>
+      <PillBtn>
+        <TrashIcon size={14} />
+        Delete
+      </PillBtn>
+      <button className="ml-1 h-8 px-3.5 rounded-full bg-white text-[#dc2626] text-[12.5px] font-medium hover:bg-white/90 transition-colors">
+        Discard
+      </button>
+    </div>
+  )
+}
+
+function PillBtn({ children }: { children: React.ReactNode }) {
+  return (
+    <button className="flex items-center gap-1.5 px-2.5 h-8 rounded-full text-[12.5px] text-white/80 hover:bg-white/[0.08] hover:text-white transition-colors">
+      {children}
+    </button>
+  )
+}
