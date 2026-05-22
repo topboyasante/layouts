@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@fontsource-variable/figtree'
+import '@fontsource-variable/inter'
 import './index.css'
 import App from './app.tsx'
 import { ErrorBoundary } from './components/error-boundary'
